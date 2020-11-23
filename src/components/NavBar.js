@@ -13,10 +13,27 @@ const link = {
 const NavBar = () => {
   return (
     <div className='navbar'>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='/movies'>Movies</NavLink>
-      <NavLink to='/directors'>Directors</NavLink>
-      <NavLink to='/actors'>Actors</NavLink>
+
+      <NavLink to='/' 
+      style={link} 
+      activeStyle={{background: 'darkblue'}}
+      >Home</NavLink>
+
+      <NavLink to='/movies' 
+      style={link} 
+      activeStyle={{background: 'darkblue'}}
+      >Movies</NavLink>
+
+      <NavLink to='/directors' 
+      style={link} 
+      activeStyle={{background: 'darkblue'}}
+      >Directors</NavLink>
+
+      <NavLink to='/actors' 
+      style={link} 
+      activeStyle={{background: 'darkblue'}}
+      >Actors</NavLink>
+      
     </div>
   );
 };
